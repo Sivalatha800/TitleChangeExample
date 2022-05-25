@@ -1,0 +1,11 @@
+<h1 class="heading">{{ heading }}</h1>
+<br /><br />
+<div class="form-group">
+  <input type="text" #data class="form-control" />
+</div>
+<br /><br />
+<div class="form-group btnDiv">
+  <button class="btn btn-danger" (click)="transforTitle.emit(data.value)">
+    Send Data To Parent
+  </button>
+</div>
